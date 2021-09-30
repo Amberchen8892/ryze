@@ -10,11 +10,7 @@ import animationProtect from '../animation/identity-protection.json';
 import clock from '../images/clock.png';
 import report from '../images/report.png';
 import question from '../images/question.png';
-import john from '../images/testimonial-images/john.svg';
-import iconPrev from '../images/testimonial-images/icon-prev.svg';
-import iconNext from '../images/testimonial-images/icon-next.svg';
-import patternQuotes from '../images/testimonial-images/pattern-quotes.svg';
-import patternCurve from '../images/testimonial-images/pattern-curve.svg';
+import Testimonial from './Testimonial';
 
 export default function Home() {
   useEffect(() => {
@@ -88,7 +84,9 @@ export default function Home() {
                     you get ahead in life and save you time and money.
                   </p>
                   <a href='/signup' className='cta'>
-                    <span>Sign Up Now</span>
+                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                      Sign Up Now
+                    </span>
                     <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
                       <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
                       <polyline
@@ -380,27 +378,7 @@ export default function Home() {
       </div>
 
       <div className='testimonial-section-container'>
-        <div className='testimonial-section'>
-          <div className='slider-container'>
-            <div className='image'>
-              <img src={john} alt='' />
-            </div>
-            <div className='navigation'>
-              <img className='prev' src={iconPrev} alt='' />
-              <img className='next' src={iconNext} alt='' />
-            </div>
-          </div>
-          <div className='feedback'>
-            <img src={patternQuotes} alt='' />
-            <p>
-              “ I am impressed! For signing up with RYZE, I can acccess my
-              credit score report anytime and get new update once a month. ”{' '}
-            </p>
-            <h4 class='name'>Tanya Sinclair</h4>
-            <h4 class='role'>Recent customer</h4>
-          </div>
-          <img class='curve' src={patternCurve} alt='' />
-        </div>
+        <Testimonial />
       </div>
     </>
   );

@@ -44,7 +44,7 @@ export default function NavBar() {
                     <Link to='/signup'>
                       <button
                         type='button'
-                        class='btn btn-outline-light'
+                        className='btn btn-outline-light'
                         style={{ width: '150px' }}
                       >
                         Sign Up{' '}
@@ -107,7 +107,7 @@ export default function NavBar() {
                   <Link to='/signup'>
                     <button
                       type='button'
-                      class='btn btn-outline-light'
+                      className='btn btn-outline-light'
                       style={{ fontSize: '0.6rem', width: '7rem' }}
                     >
                       Sign Up{' '}

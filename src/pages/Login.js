@@ -85,13 +85,6 @@ export default function Login() {
           </div>
         </div>
       </div>
-
-      {/* <div className="wrap">
-                <div id="geometric-object-one" className="object-one"></div>
-                <div id="geometric-object-two" className="object-two"></div>
-                <div id="geometric-object-three" className="object-three"></div>
-            </div>
-            <div className="card" style={{width:'70%', height:'60%'}}></div> */}
     </div>
   );
 }
