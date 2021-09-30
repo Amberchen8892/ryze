@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Ryze from '../images/RYZE.png';
 
 export default function NavBar() {
-  const [navClassName, setNavClassName] = useState('nav-container');
+  const [navClassName, setNavClassName] = useState('navbar-container');
   const listenScrollEvent = (event) => {
     if (window.scrollY < 60) {
       return setNavClassName('navbar-container');
