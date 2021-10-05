@@ -150,7 +150,7 @@ export default function PaymentForm(props) {
       </Typography>
       <Grid container spacing={3}>
       <Grid item xs={12} sm={6}>
-      <Typography variant="p" >
+      <Typography variant="h7" >
         Your Plan:
       </Typography>
         </Grid>
@@ -169,26 +169,18 @@ export default function PaymentForm(props) {
         <Grid item xs={12} sm={6}>
           {formValues.plan === '9.99' ? <Typography variant="p">
         $ 9.99
-      </Typography> : <Typography variant="p">
+      </Typography> : <Typography variant="h7">
         $ 24.95
       </Typography> }
         </Grid>
         <Grid item xs={12}>
-        <Typography variant="p" gutterBottom>
+        <Typography variant="h7" gutterBottom>
         * Membership is automatically billed to account
       </Typography>
         </Grid>
         
         </Grid>
-        {/* <Typography variant="h6" gutterBottom style={{marginTop:'30px'}}>
-        Billing Address
-      </Typography>
-      {formValues.useAddressForPaymentDetails ? (
-        <Typography variant="p" gutterBottom>
-        
-      </Typography>
-
-      ) : ()};       */}
+        {console.log('form values from Payment',formValues)}
     </React.Fragment>
   );
 }

@@ -26,12 +26,13 @@ export default function CheckboxField(props) {
   return (
     <FormControl {...rest}>
       <FormControlLabel
-        value={field.checked}
+        value='question1'
         checked={field.checked}
         control={<Checkbox {...field} onChange={_onChange} />}
         label={label}
       />
       {_renderHelperText()}
+      {console.log('checkbox field', field)}
     </FormControl>
   );
 }

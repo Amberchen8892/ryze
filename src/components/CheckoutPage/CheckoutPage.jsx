@@ -12,7 +12,8 @@ import { Formik, Form } from 'formik';
 import AddressForm from './Forms/AddressForm';
 import CreateAccountForm from './Forms/CreateAccountForm';
 import PaymentForm from './Forms/PaymentForm';
-import ReviewOrder from './ReviewOrder/ReviewOrder'
+import QuestionForm from './Forms/QuestionForm'
+//import ReviewOrder from './ReviewOrder/ReviewOrder'
 import CheckoutSuccess from './CheckoutSuccess';
 
 import validationSchema from './FormModel/validationSchema';
@@ -24,7 +25,8 @@ import useStyles from './styles';
 
 
 
-const steps = ['Your Info','Create Account', 'Payment details', 'Security Questions'];
+
+const steps = ['Your Info','Create Account',  'Security Questions','Payment details',];
 const { formId, formField } = checkoutFormModel;
 
 function _renderStepContent(step) {
@@ -34,9 +36,9 @@ function _renderStepContent(step) {
     case 1:
       return <CreateAccountForm formField={formField} />;
     case 2:
-      return <PaymentForm formField={formField} />;
+      return <QuestionForm formField={formField}/> ;
     case 3:
-      return <ReviewOrder formField={formField} />  ;
+      return <PaymentForm formField={formField} />  ;
     default:
       return <div>Not Found</div>;
   }
@@ -101,7 +103,7 @@ export default function CheckoutPage() {
             validationSchema={currentValidationSchema}
             onSubmit={_handleSubmit}
           >
-            {({ isSubmitting }) => (
+            {({ isSubmitting, values }) => (
               <Form id={formId}>
                 {_renderStepContent(activeStep)}
 
@@ -113,6 +115,7 @@ export default function CheckoutPage() {
                   )}
                   <div className={classes.wrapper}>
                     <Button
+                    onClick={()=> console.log('click')}
                       disabled={isSubmitting}
                       type="submit"
                       variant="contained"
@@ -129,8 +132,11 @@ export default function CheckoutPage() {
                     )}
                   </div>
                 </div>
+                {/* {console.log('check values',JSON.stringify(values, null, 2))} */}
+                {/* <pre>{JSON.stringify(values, null, 2)}</pre> */}
               </Form>
             )}
+           
           </Formik>
         )}
       </React.Fragment>

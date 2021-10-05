@@ -78,7 +78,7 @@ export default function PaymentForm(props) {
         </Grid> */}
         </Grid>
         <div style={{marginTop:'2rem'}}>
-        <Typography variant="p" gutterBottom >
+        <Typography variant="h6" gutterBottom >
         <span style={{fontWeight:'bold', marginRight:'0.3rem'}}>*</span>You understand by clicking button below, you accept and agree to our <span style={{color:'#00bcd4'}}>Privacy Policy</span> and <span style={{color:'#00bcd4'}}>Term of Use.</span>
       </Typography>
       </div>

@@ -65,6 +65,7 @@ const checkoutFormModel = {
     useAddressForPaymentDetails: {
       name: 'useAddressForPaymentDetails',
       label: 'Use this address for billing',
+      answer: '',
     },
     creditMonitoring: {
       name: 'creditMonitoring',
@@ -126,7 +127,22 @@ const checkoutFormModel = {
       name: 'plan',
       label: 'Select The plan',
       requiredErrorMsg: 'Plan is required',
-      invalidErrorMsg: 'Plan is not valid',
+    },
+    question1: {
+      name: 'question1',
+      requiredErrorMsg: 'Answer is required',
+    },
+    question2: {
+      name: 'question2',
+      requiredErrorMsg: 'Answer is required',
+    },
+    question3: {
+      name: 'question3',
+      requiredErrorMsg: 'Answer is required',
+    },
+    question4: {
+      name: 'question4',
+      requiredErrorMsg: 'Answer is required',
     },
   },
 };

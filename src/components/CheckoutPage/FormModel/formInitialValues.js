@@ -24,10 +24,18 @@ const {
     billingZipcode,
     billingState,
     plan,
+    question1,
+    question2,
+    question3,
+    question4,
   },
 } = checkoutFormModel;
 
 const formInitialValues = {
+  [question1.name]: '',
+  [question2.name]: '',
+  [question3.name]: '',
+  [question4.name]: '',
   [firstName.name]: '',
   [lastName.name]: '',
   [address1.name]: '',

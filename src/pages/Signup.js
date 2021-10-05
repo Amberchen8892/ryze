@@ -16,14 +16,10 @@ export default function Signup() {
     <div className='signup-container'>
       <div className='row containerOne'>
         <div className='row'>
-          {/* <div class='col-12 col-md-5'>
-            <h1>Thank you for jonning us!</h1>
-            <div id='signup-animation'></div>
-          </div> */}
           <div
-            class='col-12 col-md-12'
+            className='col-12 col-md-12 signup-form-container'
             // style={{ backgroundColor: 'transparent' }}
-            className='signup-form-container'
+            // className='signup-form-container'
           >
             <MaterialLayout style={{ BaseAudioContext: 'green' }}>
               <CheckoutPage />

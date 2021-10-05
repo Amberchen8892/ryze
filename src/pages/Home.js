@@ -45,7 +45,15 @@ export default function Home() {
       <div className='home'>
         <div className=' section-one'>
           <div className='row' style={{ minHeight: '70vh' }}>
-            <div className='col-12 col-md-6' style={{ marginTop: '100px' }}>
+            <div
+              className='col-12 col-md-6'
+              style={{
+                marginTop: '100px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
               <div id='home-data'></div>
             </div>
             <div className='col-12 col-md-6'>

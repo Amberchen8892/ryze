@@ -23,6 +23,7 @@ const {
     billingZipcode,
     billingState,
     plan,
+    question1,
   },
 } = checkoutFormModel;
 
@@ -51,8 +52,12 @@ const validationSchema = [
     [dateOfBirth.name]: Yup.string().required(
       `${dateOfBirth.requiredErrorMsg}`
     ),
-    [plan.name]: Yup.string().required(`${state.requiredErrorMsg}`),
+    [plan.name]: Yup.string().required(`${plan.requiredErrorMsg}`),
   }),
+  Yup.object().shape({
+    [question1.name]: Yup.string().required(`${question1.requiredErrorMsg}`),
+  }),
+
   Yup.object().shape({
     [nameOnCard.name]: Yup.string().required(`${nameOnCard.requiredErrorMsg}`),
     [cardNumber.name]: Yup.string()
