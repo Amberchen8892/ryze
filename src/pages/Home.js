@@ -11,6 +11,7 @@ import clock from '../images/clock.png';
 import report from '../images/report.png';
 import question from '../images/question.png';
 import Testimonial from './Testimonial';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   useEffect(() => {
@@ -91,18 +92,20 @@ export default function Home() {
                     applications. Having a good grasp on your credit can help
                     you get ahead in life and save you time and money.
                   </p>
-                  <a href='/signup' className='cta'>
-                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                      Sign Up Now
-                    </span>
-                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                      <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
-                      <polyline
-                        style={{ stroke: 'white' }}
-                        points='8 1 12 5 8 9'
-                      ></polyline>
-                    </svg>
-                  </a>
+                  <Link to='/signup'>
+                    <a href='#foo' className='cta'>
+                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                        Sign Up Now
+                      </span>
+                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
+                        <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
+                        <polyline
+                          style={{ stroke: 'white' }}
+                          points='8 1 12 5 8 9'
+                        ></polyline>
+                      </svg>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -238,18 +241,20 @@ export default function Home() {
                     Monthly Membership for just $24.95 automatically billed to
                     account
                   </p>
-                  <a href='/signup' className='cta'>
-                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                      Start Now
-                    </span>
-                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                      <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
-                      <polyline
-                        style={{ stroke: 'white' }}
-                        points='8 1 12 5 8 9'
-                      ></polyline>
-                    </svg>
-                  </a>
+                  <Link to='/signup'>
+                    <a href='#foo' className='cta'>
+                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                        Start Now
+                      </span>
+                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
+                        <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
+                        <polyline
+                          style={{ stroke: 'white' }}
+                          points='8 1 12 5 8 9'
+                        ></polyline>
+                      </svg>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -305,18 +310,20 @@ export default function Home() {
                     Monthly Membership for just $24.95 automatically billed to
                     account
                   </p>
-                  <a href='/signup' className='cta'>
-                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                      Action Now
-                    </span>
-                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                      <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
-                      <polyline
-                        style={{ stroke: 'white' }}
-                        points='8 1 12 5 8 9'
-                      ></polyline>
-                    </svg>
-                  </a>
+                  <Link to='/signup'>
+                    <a href='#foo' className='cta'>
+                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                        Action Now
+                      </span>
+                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
+                        <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
+                        <polyline
+                          style={{ stroke: 'white' }}
+                          points='8 1 12 5 8 9'
+                        ></polyline>
+                      </svg>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -366,18 +373,20 @@ export default function Home() {
                     Monthly Membership for just $24.95 automatically billed to
                     account
                   </p>
-                  <a href='/questions' className='cta'>
-                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                      Get Answers
-                    </span>
-                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                      <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
-                      <polyline
-                        points='8 1 12 5 8 9'
-                        style={{ stroke: 'white' }}
-                      ></polyline>
-                    </svg>
-                  </a>
+                  <Link to='questions'>
+                    <a href='#foo' className='cta'>
+                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                        Get Answers
+                      </span>
+                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
+                        <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
+                        <polyline
+                          points='8 1 12 5 8 9'
+                          style={{ stroke: 'white' }}
+                        ></polyline>
+                      </svg>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
