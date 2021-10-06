@@ -307,7 +307,7 @@ export default function Home() {
                     the pass.
                   </p>
                   <p style={{ marginBottom: '30px' }}>
-                    Monthly Membership for just $24.95 automatically billed to
+                    Monthly Membership for just $9.99 automatically billed to
                     account
                   </p>
                   <Link to='/signup'>
@@ -368,10 +368,6 @@ export default function Home() {
                   <p>
                     Get the answers you need to commonly asked questions about
                     managing your credit.
-                  </p>
-                  <p style={{ marginBottom: '30px' }}>
-                    Monthly Membership for just $24.95 automatically billed to
-                    account
                   </p>
                   <Link to='questions'>
                     <a href='#foo' className='cta'>
