@@ -3,6 +3,7 @@ import { Row, Container, Col } from 'react-bootstrap';
 import trans from '../images/transunion.png';
 import equifax from '../images/equifax-logo.png';
 import exp from '../images/ExperianSmall.png';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -67,15 +68,17 @@ export default function Footer() {
               >
                 Start at $24.95/month
               </p>
-              <a
-                href='/signup'
-                className='btn btn-info footer-one-btn'
-                role='button'
-              >
-                <span style={{ color: 'white', fontWeight: 'bold' }}>
-                  Enroll Now
-                </span>
-              </a>
+              <Link to='/signup'>
+                <a
+                  href='#foo'
+                  className='btn btn-info footer-one-btn'
+                  role='button'
+                >
+                  <span style={{ color: 'white', fontWeight: 'bold' }}>
+                    Enroll Now
+                  </span>
+                </a>
+              </Link>
             </Col>
             <Col
               xs={12}
@@ -112,15 +115,17 @@ export default function Footer() {
               >
                 start at $9.99/month
               </p>
-              <a
-                href='/signup'
-                className='btn btn-info footer-one-btn'
-                role='button'
-              >
-                <span style={{ color: 'white', fontWeight: 'bold' }}>
-                  Take Action
-                </span>
-              </a>
+              <Link to='/signup'>
+                <a
+                  href='#foo'
+                  className='btn btn-info footer-one-btn'
+                  role='button'
+                >
+                  <span style={{ color: 'white', fontWeight: 'bold' }}>
+                    Take Action
+                  </span>
+                </a>
+              </Link>
             </Col>
           </Row>
         </Container>
