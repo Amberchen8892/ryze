@@ -95,15 +95,6 @@ export default function NavBar() {
                 }}
               >
                 <div style={{ display: 'flex', flex: 'wrap' }}>
-                  {/* <a
-                    href='/signup'
-                    className='btn btn-info footer-one-btn'
-                    role='button'
-                  >
-                    <span style={{ color: 'white', fontWeight: 'bold' }}>
-                      Take Action
-                    </span>
-                  </a> */}
                   <Link to='/signup'>
                     <button
                       type='button'
