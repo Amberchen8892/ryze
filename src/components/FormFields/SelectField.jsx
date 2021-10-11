@@ -2,13 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { at } from 'lodash';
 import { useField } from 'formik';
-import {
-  InputLabel,
-  FormControl,
-  Select,
-  MenuItem,
-  FormHelperText
-} from '@material-ui/core';
+import { InputLabel, FormControl, Select, MenuItem, FormHelperText } from '@material-ui/core';
 
 function SelectField(props) {
   const { label, data, ...rest } = props;
@@ -38,11 +32,11 @@ function SelectField(props) {
 }
 
 SelectField.defaultProps = {
-  data: []
+  data: [],
 };
 
 SelectField.propTypes = {
-  data: PropTypes.array.isRequired
+  data: PropTypes.array.isRequired,
 };
 
 export default SelectField;

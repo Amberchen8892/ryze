@@ -35,15 +35,12 @@ const creditScoreQuestions = [
       '<p> A credit inquiry is when a primarily financial company requests information that will help them better understand a person’s credit worthiness. These types of primarily financial companies use the elements of your credit report to help them decide how much credit they should issue to you. One of the most common types of inquiry is when you are applying for an auto loan, a home loan, and auto loan, or even when you want to rent an apartment. Remember, inquiries are only made with your permission. </p>',
   },
   {
-    question:
-      'What kind of benefits do I receive with a myryze.com membership?',
-    answer:
-      '<p> When you become a myryze.com member, you will receive unlimited access to your credit reports and scores. You will also get 24 hour credit monitoring, as well as credit alerts. </p>',
+    question: 'What kind of benefits do I receive with a myryze.com membership?',
+    answer: '<p> When you become a myryze.com member, you will receive unlimited access to your credit reports and scores. You will also get 24 hour credit monitoring, as well as credit alerts. </p>',
   },
   {
     question: 'How do I view my credit report & score?',
-    answer:
-      '<p> Once you have completed the enrollment process, you will be automatically directed to our member dashboard. From the member dashboard, you can easily navigate between the different benefits by using the tabs near the top of the page. </p>',
+    answer: '<p> Once you have completed the enrollment process, you will be automatically directed to our member dashboard. From the member dashboard, you can easily navigate between the different benefits by using the tabs near the top of the page. </p>',
   },
   {
     question: 'How can I view my credit alerts?',

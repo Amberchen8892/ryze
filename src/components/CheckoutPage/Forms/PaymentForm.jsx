@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { useFormikContext } from 'formik';
-import { InputField, DatePickerField,SelectField} from '../../FormFields';
+import { InputField, DatePickerField, SelectField } from '../../FormFields';
 const states = [
   { value: 'AL', label: 'Alabama' },
   { value: 'AK', label: 'Alaska' },
@@ -54,13 +54,11 @@ const states = [
   { value: 'WV', label: 'West Virginia' },
   { value: 'WI', label: 'Wisconsin' },
   { value: 'WY', label: 'Wyoming' },
-
-
 ];
 export default function PaymentForm(props) {
   const { values: formValues } = useFormikContext();
   const {
-    formField: { nameOnCard, cardNumber, expiryDate, cvv,  billingAddress1, billingAddress2, billingCity,billingState,billingZipcode }
+    formField: { nameOnCard, cardNumber, expiryDate, cvv, billingAddress1, billingAddress2, billingCity, billingState, billingZipcode },
   } = props;
 
   return (
@@ -70,117 +68,81 @@ export default function PaymentForm(props) {
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <InputField
-            name={nameOnCard.name}
-            label={nameOnCard.label}
-            fullWidth
-          />
+          <InputField name={nameOnCard.name} label={nameOnCard.label} fullWidth />
         </Grid>
         <Grid item xs={12} md={6}>
-          <InputField
-            name={cardNumber.name}
-            label={cardNumber.label}
-            fullWidth
-          />
+          <InputField name={cardNumber.name} label={cardNumber.label} fullWidth />
         </Grid>
         <Grid item xs={12} md={6}>
-          <DatePickerField
-            name={expiryDate.name}
-            label={expiryDate.label}
-            format="MM/yy"
-            views={['year', 'month']}
-            minDate={new Date()}
-            maxDate={new Date('2050/12/31')}
-            fullWidth
-          />
+          <DatePickerField name={expiryDate.name} label={expiryDate.label} format="MM/yy" views={['year', 'month']} minDate={new Date()} maxDate={new Date('2050/12/31')} fullWidth />
         </Grid>
         <Grid item xs={12} md={6}>
           <InputField name={cvv.name} label={cvv.label} fullWidth />
         </Grid>
       </Grid>
-      <Typography variant="h6" gutterBottom style={{marginTop:'50px'}}>
+      <Typography variant="h6" gutterBottom style={{ marginTop: '50px' }}>
         Billing Address
       </Typography>
-      {formValues.useAddressForPaymentDetails === 'Yes' ? ( <Grid container spacing={3}>
-      <Grid item xs={12}>
-          <InputField name={billingAddress1.name} label={billingAddress1.label} value={formValues.billingAddress1 = formValues.address1} fullWidth />
+      {formValues.useAddressForPaymentDetails === 'Yes' ? (
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <InputField name={billingAddress1.name} label={billingAddress1.label} value={(formValues.billingAddress1 = formValues.address1)} fullWidth />
+          </Grid>
+          <Grid item xs={12}>
+            <InputField name={billingAddress2.name} label={billingAddress2.label} value={(formValues.billingAddress2 = formValues.address2)} fullWidth />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <InputField name={billingCity.name} value={(formValues.billingCity = formValues.city)} label={billingCity.label} fullWidth />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <SelectField name={billingState.name} label={billingState.label} data={states} value={(formValues.billingState = formValues.state)} fullWidth />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <InputField name={billingZipcode.name} label={billingZipcode.label} value={(formValues.billingZipcode = formValues.zipcode)} fullWidth />
+          </Grid>
         </Grid>
-        <Grid item xs={12}>
-          <InputField name={billingAddress2.name} label={billingAddress2.label} value={formValues.billingAddress2 = formValues.address2} fullWidth />
+      ) : (
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <InputField name={billingAddress1.name} label={billingAddress1.label} fullWidth />
+          </Grid>
+          <Grid item xs={12}>
+            <InputField name={billingAddress2.name} label={billingAddress2.label} fullWidth />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <InputField name={billingCity.name} label={billingCity.label} fullWidth />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <SelectField name={billingState.name} label={billingState.label} data={states} fullWidth />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <InputField name={billingZipcode.name} label={billingZipcode.label} fullWidth />
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={6}>
-        <InputField name={billingCity.name} value={formValues.billingCity=formValues.city} label={billingCity.label} fullWidth />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <SelectField
-            name={billingState.name}
-            label={billingState.label}
-            data={states}
-            value={ formValues.billingState =formValues.state}
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputField name={billingZipcode.name} label={billingZipcode.label} value={formValues.billingZipcode = formValues.zipcode} fullWidth />
-        </Grid>
-        </Grid>) : ( <Grid container spacing={3}>
-      <Grid item xs={12}>
-          <InputField name={billingAddress1.name} label={billingAddress1.label} fullWidth />
-        </Grid>
-        <Grid item xs={12}>
-          <InputField name={billingAddress2.name} label={billingAddress2.label} fullWidth />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-        <InputField name={billingCity.name} label={billingCity.label} fullWidth />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <SelectField
-            name={billingState.name}
-            label={billingState.label}
-            data={states}
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputField name={billingZipcode.name} label={billingZipcode.label} fullWidth />
-        </Grid>
-        </Grid>)}
-        <Typography variant="h6" gutterBottom style={{marginTop:'30px'}}>
+      )}
+      <Typography variant="h6" gutterBottom style={{ marginTop: '30px' }}>
         Account Summary
       </Typography>
       <Grid container spacing={3}>
-      <Grid item xs={12} sm={6}>
-      <Typography variant="h7" >
-        Your Plan:
-      </Typography>
+        <Grid item xs={12} sm={6}>
+          <Typography variant="h7">Your Plan:</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
-          {formValues.plan === '9.99' ? <Typography variant="p" >
-        Identity Protection
-      </Typography> : <Typography variant="p" >
-        Credit Score Monitoring
-      </Typography>}
+          {formValues.plan === '9.99' ? <Typography variant="p">Identity Protection</Typography> : <Typography variant="p">Credit Score Monitoring</Typography>}
         </Grid>
         <Grid item xs={12} sm={6}>
-        <Typography variant="p">
-        Total:
-      </Typography>
+          <Typography variant="p">Total:</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
-          {formValues.plan === '9.99' ? <Typography variant="p">
-        $ 9.99
-      </Typography> : <Typography variant="h7">
-        $ 24.95
-      </Typography> }
+          {formValues.plan === '9.99' ? <Typography variant="p">$ 9.99</Typography> : <Typography variant="h7">$ 24.95</Typography>}
         </Grid>
         <Grid item xs={12}>
-        <Typography variant="h7" gutterBottom>
-        * Membership is automatically billed to account
-      </Typography>
+          <Typography variant="h7" gutterBottom>
+            * Membership is automatically billed to account
+          </Typography>
         </Grid>
-        
-        </Grid>
-        {console.log('form values from Payment',formValues)}
+      </Grid>
+      {console.log('form values from Payment', formValues)}
     </React.Fragment>
   );
 }

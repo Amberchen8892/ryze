@@ -9,8 +9,7 @@ const users = [
   {
     name: 'Tanya Sinclair',
     role: 'Recent Customer',
-    feedback:
-      '“I am impressed! For signing up with RYZE, I can acccess my credit score report anytime and get new update once a month. ”',
+    feedback: '“I am impressed! For signing up with RYZE, I can acccess my credit score report anytime and get new update once a month. ”',
     image: `${taya}`,
   },
   {
@@ -52,17 +51,17 @@ export default function Login() {
   }, []);
 
   return (
-    <div className='testimonial-section-container'>
-      <div className='testimonial-section'>
-        <div className='slider-container'>
-          <div className='image'>{/* <img src={john} alt='' /> */}</div>
-          <div className='navigation'>
-            <img className='prev' src={iconPrev} alt='' />
-            <img className='next' src={iconNext} alt='' />
+    <div className="testimonial-section-container">
+      <div className="testimonial-section">
+        <div className="slider-container">
+          <div className="image">{/* <img src={john} alt='' /> */}</div>
+          <div className="navigation">
+            <img className="prev" src={iconPrev} alt="" />
+            <img className="next" src={iconNext} alt="" />
           </div>
         </div>
-        <div className='feedback'>
-          <img src={patternQuotes} alt='' />
+        <div className="feedback">
+          <img src={patternQuotes} alt="" />
           {/* <p>
             “ I am impressed! For signing up with RYZE, I can acccess my credit
             score report anytime and get new update once a month. ”{' '}
@@ -70,7 +69,7 @@ export default function Login() {
           <h4 className='name'>Tanya Sinclair</h4>
           <h4 className='role'>Recent customer</h4> */}
         </div>
-        <img className='curve' src={patternCurve} alt='' />
+        <img className="curve" src={patternCurve} alt="" />
       </div>
     </div>
   );

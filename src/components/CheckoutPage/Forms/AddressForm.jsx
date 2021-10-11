@@ -54,31 +54,15 @@ const states = [
   { value: 'WV', label: 'West Virginia' },
   { value: 'WI', label: 'Wisconsin' },
   { value: 'WY', label: 'Wyoming' },
-
-
 ];
-const useAddressForBilling =[
-  {value:'Yes', label:'Yes'},
-  {value:'No', label:'No'},
-
-]
-
-
+const useAddressForBilling = [
+  { value: 'Yes', label: 'Yes' },
+  { value: 'No', label: 'No' },
+];
 
 export default function AddressForm(props) {
-  
   const {
-    formField: {
-      firstName,
-      lastName,
-      address1,
-      address2,
-      city,
-      state,
-      zipcode,
-      phone,
-      useAddressForPaymentDetails
-    }
+    formField: { firstName, lastName, address1, address2, city, state, zipcode, phone, useAddressForPaymentDetails },
   } = props;
   return (
     <React.Fragment>
@@ -99,30 +83,19 @@ export default function AddressForm(props) {
           <InputField name={address2.name} label={address2.label} fullWidth />
         </Grid>
         <Grid item xs={12} sm={6}>
-        <InputField name={city.name} label={city.label} fullWidth />
+          <InputField name={city.name} label={city.label} fullWidth />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <SelectField
-            name={state.name}
-            label={state.label}
-            data={states}
-            fullWidth
-          />
+          <SelectField name={state.name} label={state.label} data={states} fullWidth />
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputField name={zipcode.name} label={zipcode.label} fullWidth />
         </Grid>
         <Grid item xs={12} sm={6}>
-        <InputField name={phone.name} label={phone.label} fullWidth />
-          
+          <InputField name={phone.name} label={phone.label} fullWidth />
         </Grid>
         <Grid item xs={12} sm={6}>
-        <SelectField
-            name={useAddressForPaymentDetails.name}
-            label={useAddressForPaymentDetails.label}
-            data={useAddressForBilling}
-            fullWidth
-          />
+          <SelectField name={useAddressForPaymentDetails.name} label={useAddressForPaymentDetails.label} data={useAddressForBilling} fullWidth />
           {/* <CheckboxField
             name={useAddressForPaymentDetails.name}
             label={useAddressForPaymentDetails.label}

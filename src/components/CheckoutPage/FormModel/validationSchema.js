@@ -2,29 +2,7 @@ import * as Yup from 'yup';
 import moment from 'moment';
 import checkoutFormModel from './checkoutFormModel';
 const {
-  formField: {
-    firstName,
-    lastName,
-    address1,
-    city,
-    zipcode,
-    state,
-    phone,
-    ssn,
-    dateOfBirth,
-    email,
-    password,
-    nameOnCard,
-    cardNumber,
-    expiryDate,
-    cvv,
-    billingAddress1,
-    billingCity,
-    billingZipcode,
-    billingState,
-    plan,
-    question1,
-  },
+  formField: { firstName, lastName, address1, city, zipcode, state, phone, ssn, dateOfBirth, email, password, nameOnCard, cardNumber, expiryDate, cvv, billingAddress1, billingCity, billingZipcode, billingState, plan, question1 },
 } = checkoutFormModel;
 
 const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
@@ -38,20 +16,14 @@ const validationSchema = [
     [state.name]: Yup.string().required(`${state.requiredErrorMsg}`),
     [zipcode.name]: Yup.string()
       .required(`${zipcode.requiredErrorMsg}`)
-      .test(
-        'len',
-        `${zipcode.invalidErrorMsg}`,
-        (val) => val && val.length === 5
-      ),
+      .test('len', `${zipcode.invalidErrorMsg}`, (val) => val && val.length === 5),
     [phone.name]: Yup.string().nullable().required(`${phone.requiredErrorMsg}`),
   }),
   Yup.object().shape({
     [ssn.name]: Yup.string().required(`${ssn.requiredErrorMsg}`),
     [password.name]: Yup.string().required(`${password.requiredErrorMsg}`),
     [email.name]: Yup.string().required(`${email.requiredErrorMsg}`),
-    [dateOfBirth.name]: Yup.string().required(
-      `${dateOfBirth.requiredErrorMsg}`
-    ),
+    [dateOfBirth.name]: Yup.string().required(`${dateOfBirth.requiredErrorMsg}`),
     [plan.name]: Yup.string().required(`${plan.requiredErrorMsg}`),
   }),
   Yup.object().shape({
@@ -60,26 +32,14 @@ const validationSchema = [
 
   Yup.object().shape({
     [nameOnCard.name]: Yup.string().required(`${nameOnCard.requiredErrorMsg}`),
-    [cardNumber.name]: Yup.string()
-      .required(`${cardNumber.requiredErrorMsg}`)
-      .matches(visaRegEx, cardNumber.invalidErrorMsg),
-    [billingAddress1.name]: Yup.string()
-      .nullable()
-      .required(`${address1.requiredErrorMsg}`),
-    [billingCity.name]: Yup.string()
-      .nullable()
-      .required(`${billingCity.requiredErrorMsg}`),
-    [billingState.name]: Yup.string()
-      .nullable()
-      .required(`${billingState.requiredErrorMsg}`),
+    [cardNumber.name]: Yup.string().required(`${cardNumber.requiredErrorMsg}`).matches(visaRegEx, cardNumber.invalidErrorMsg),
+    [billingAddress1.name]: Yup.string().nullable().required(`${address1.requiredErrorMsg}`),
+    [billingCity.name]: Yup.string().nullable().required(`${billingCity.requiredErrorMsg}`),
+    [billingState.name]: Yup.string().nullable().required(`${billingState.requiredErrorMsg}`),
     [billingZipcode.name]: Yup.string()
       .nullable()
       .required(`${billingZipcode.requiredErrorMsg}`)
-      .test(
-        'len',
-        `${zipcode.invalidErrorMsg}`,
-        (val) => val && val.length === 5
-      ),
+      .test('len', `${zipcode.invalidErrorMsg}`, (val) => val && val.length === 5),
     [expiryDate.name]: Yup.string()
       .nullable()
       .required(`${expiryDate.requiredErrorMsg}`)

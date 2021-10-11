@@ -1,12 +1,7 @@
 import React from 'react';
 import { at } from 'lodash';
 import { useField } from 'formik';
-import {
-  Checkbox,
-  FormControl,
-  FormControlLabel,
-  FormHelperText
-} from '@material-ui/core';
+import { Checkbox, FormControl, FormControlLabel, FormHelperText } from '@material-ui/core';
 export default function CheckboxField(props) {
   const { label, ...rest } = props;
   const [field, meta, helper] = useField(props);
@@ -25,12 +20,7 @@ export default function CheckboxField(props) {
 
   return (
     <FormControl {...rest}>
-      <FormControlLabel
-        value='question1'
-        checked={field.checked}
-        control={<Checkbox {...field} onChange={_onChange} />}
-        label={label}
-      />
+      <FormControlLabel value="question1" checked={field.checked} control={<Checkbox {...field} onChange={_onChange} />} label={label} />
       {_renderHelperText()}
       {console.log('checkbox field', field)}
     </FormControl>

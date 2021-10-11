@@ -13,11 +13,11 @@ export default function Signup() {
   }, []);
 
   return (
-    <div className='signup-container'>
-      <div className='row containerOne'>
-        <div className='row'>
+    <div className="signup-container">
+      <div className="row containerOne">
+        <div className="row">
           <div
-            className='col-12 col-md-12 signup-form-container'
+            className="col-12 col-md-12 signup-form-container"
             // style={{ backgroundColor: 'transparent' }}
             // className='signup-form-container'
           >

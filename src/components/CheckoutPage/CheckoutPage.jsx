@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
-import {
-  Stepper,
-  Step,
-  StepLabel,
-  Button,
-  Typography,
-  CircularProgress
-} from '@material-ui/core';
+import { Stepper, Step, StepLabel, Button, Typography, CircularProgress } from '@material-ui/core';
 import { Formik, Form } from 'formik';
 
 import AddressForm from './Forms/AddressForm';
 import CreateAccountForm from './Forms/CreateAccountForm';
 import PaymentForm from './Forms/PaymentForm';
-import QuestionForm from './Forms/QuestionForm'
+import QuestionForm from './Forms/QuestionForm';
 //import ReviewOrder from './ReviewOrder/ReviewOrder'
 import CheckoutSuccess from './CheckoutSuccess';
 
@@ -22,11 +15,7 @@ import formInitialValues from './FormModel/formInitialValues';
 
 import useStyles from './styles';
 
-
-
-
-
-const steps = ['Your Info','Create Account',  'Security Questions','Payment details',];
+const steps = ['Your Info', 'Create Account', 'Security Questions', 'Payment details'];
 const { formId, formField } = checkoutFormModel;
 
 function _renderStepContent(step) {
@@ -36,9 +25,9 @@ function _renderStepContent(step) {
     case 1:
       return <CreateAccountForm formField={formField} />;
     case 2:
-      return <QuestionForm formField={formField}/> ;
+      return <QuestionForm formField={formField} />;
     case 3:
-      return <PaymentForm formField={formField} />  ;
+      return <PaymentForm formField={formField} />;
     default:
       return <div>Not Found</div>;
   }
@@ -51,7 +40,7 @@ export default function CheckoutPage() {
   const isLastStep = activeStep === steps.length - 1;
 
   function _sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   async function _submitForm(values, actions) {
@@ -78,31 +67,23 @@ export default function CheckoutPage() {
 
   return (
     <React.Fragment>
-      <Typography component="h1" variant="h4" align="center" style={{fontFamily: 'Lato, san-serif',
-                  fontWeight: 'bolder',
-                  fontSize: '2.5rem',
-                  color:'#21e6c1'
-              }}>
+      <Typography component="h1" variant="h4" align="center" style={{ fontFamily: 'Lato, san-serif', fontWeight: 'bolder', fontSize: '2.5rem', color: '#21e6c1' }}>
         Sign Up
       </Typography>
-     
-      <Stepper activeStep={activeStep} StepIconProps={{ classes:{ root: classes.icon, active: classes.activeIcon, completed: classes.completedIcon } }} className={classes.stepper}>
-        {steps.map(label => (
+
+      <Stepper activeStep={activeStep} StepIconProps={{ classes: { root: classes.icon, active: classes.activeIcon, completed: classes.completedIcon } }} className={classes.stepper}>
+        {steps.map((label) => (
           <Step key={label}>
             <StepLabel>{label}</StepLabel>
           </Step>
         ))}
       </Stepper>
-     
+
       <React.Fragment>
         {activeStep === steps.length ? (
           <CheckoutSuccess />
         ) : (
-          <Formik
-            initialValues={formInitialValues}
-            validationSchema={currentValidationSchema}
-            onSubmit={_handleSubmit}
-          >
+          <Formik initialValues={formInitialValues} validationSchema={currentValidationSchema} onSubmit={_handleSubmit}>
             {({ isSubmitting, values }) => (
               <Form id={formId}>
                 {_renderStepContent(activeStep)}
@@ -114,29 +95,16 @@ export default function CheckoutPage() {
                     </Button>
                   )}
                   <div className={classes.wrapper}>
-                    <Button
-                    onClick={()=> console.log('click')}
-                      disabled={isSubmitting}
-                      type="submit"
-                      variant="contained"
-                      color="primary"
-                      className={classes.button}
-                    >
+                    <Button onClick={() => console.log('click')} disabled={isSubmitting} type="submit" variant="contained" color="primary" className={classes.button}>
                       {isLastStep ? 'Submit' : 'Next'}
                     </Button>
-                    {isSubmitting && (
-                      <CircularProgress
-                        size={24}
-                        className={classes.buttonProgress}
-                      />
-                    )}
+                    {isSubmitting && <CircularProgress size={24} className={classes.buttonProgress} />}
                   </div>
                 </div>
                 {/* {console.log('check values',JSON.stringify(values, null, 2))} */}
                 {/* <pre>{JSON.stringify(values, null, 2)}</pre> */}
               </Form>
             )}
-           
           </Formik>
         )}
       </React.Fragment>
