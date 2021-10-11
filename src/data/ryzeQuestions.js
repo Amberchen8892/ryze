@@ -1,14 +1,11 @@
 const ryzeQuestions = [
   {
     question: 'What is the best way that I can contactcustomer supports',
-    answer:
-      '<p>You can just call our Customer Service at (888) 418-1763. We are here and ready to help you.</p>',
+    answer: '<p>You can just call our Customer Service at (888) 418-1763. We are here and ready to help you.</p>',
   },
   {
-    question:
-      'Whoops, I canceled my membership, and now I would like to reactivate it.',
-    answer:
-      ' <p> No problem, we are happy to help. All you need to do is call Customer Service at (888) 418-1763 so we can get started helping you with that. </p>',
+    question: 'Whoops, I canceled my membership, and now I would like to reactivate it.',
+    answer: ' <p> No problem, we are happy to help. All you need to do is call Customer Service at (888) 418-1763 so we can get started helping you with that. </p>',
   },
   {
     question: ' And what if I choose to cancel my membership?',

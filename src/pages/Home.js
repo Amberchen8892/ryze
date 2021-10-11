@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -43,11 +42,11 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className='home'>
-        <div className=' section-one'>
-          <div className='row' style={{ minHeight: '70vh' }}>
+      <div className="home">
+        <div className=" section-one">
+          <div className="row" style={{ minHeight: '70vh' }}>
             <div
-              className='col-12 col-md-6'
+              className="col-12 col-md-6"
               style={{
                 marginTop: '100px',
                 display: 'flex',
@@ -55,10 +54,10 @@ export default function Home() {
                 alignItems: 'center',
               }}
             >
-              <div id='home-data'></div>
+              <div id="home-data"></div>
             </div>
-            <div className='col-12 col-md-6'>
-              <div className='glass-card' style={{ color: 'white' }}>
+            <div className="col-12 col-md-6">
+              <div className="glass-card" style={{ color: 'white' }}>
                 <div style={{ width: '80%' }}>
                   <h1
                     style={{
@@ -87,25 +86,14 @@ export default function Home() {
                       marginBottom: '50px',
                     }}
                   >
-                    In today's world, a lot of things depend on your credit-loan
-                    approvals, insurance premiums, even the success of job
-                    applications. Having a good grasp on your credit can help
-                    you get ahead in life and save you time and money.
+                    In today's world, a lot of things depend on your credit-loan approvals, insurance premiums, even the success of job applications. Having a good grasp on your credit can help you get ahead in life and save you time and money.
                   </p>
 
-                  <a
-                    href='https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D'
-                    className='cta'
-                  >
-                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                      Sign Up Now
-                    </span>
-                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                      <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
-                      <polyline
-                        style={{ stroke: 'white' }}
-                        points='8 1 12 5 8 9'
-                      ></polyline>
+                  <a href="https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D" className="cta">
+                    <span style={{ fontSize: '0.9rem', color: 'white' }}>Sign Up Now</span>
+                    <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
+                      <path style={{ stroke: 'white' }} d="M1,5 L11,5"></path>
+                      <polyline style={{ stroke: 'white' }} points="8 1 12 5 8 9"></polyline>
                     </svg>
                   </a>
                 </div>
@@ -116,10 +104,10 @@ export default function Home() {
       </div>
 
       <div style={{ width: '100%', backgroundColor: 'white !important' }}>
-        <div className=' container section-two'>
-          <div className='row section-two-text'>
-            <div className='col-12 col-md-4'>
-              <img src={clock} width='25%' height='25%' alt='Monitoring' />
+        <div className=" container section-two">
+          <div className="row section-two-text">
+            <div className="col-12 col-md-4">
+              <img src={clock} width="25%" height="25%" alt="Monitoring" />
 
               <h1
                 style={{
@@ -131,14 +119,10 @@ export default function Home() {
               >
                 Credit Monitoring
               </h1>
-              <p style={{ padding: '0px 10px' }}>
-                A simple and innovative way to view your credit report.
-                Inquiries can happen anytime, that’s why we monitor all three of
-                your credit reports 24/7 and 365 days a year.
-              </p>
+              <p style={{ padding: '0px 10px' }}>A simple and innovative way to view your credit report. Inquiries can happen anytime, that’s why we monitor all three of your credit reports 24/7 and 365 days a year.</p>
             </div>
-            <div className='col-12 col-md-4'>
-              <img src={report} width='25%' height='25%' alt='Monitoring' />
+            <div className="col-12 col-md-4">
+              <img src={report} width="25%" height="25%" alt="Monitoring" />
 
               <h1
                 style={{
@@ -150,15 +134,10 @@ export default function Home() {
               >
                 Identity Protection
               </h1>
-              <p style={{ padding: '0px 10px' }}>
-                With your name and social security number, imposters can open
-                credit cards,take out a loan and even open new bank accounts.
-                RYZE helps you to act immediately whenever anything suspicious
-                occurs.
-              </p>
+              <p style={{ padding: '0px 10px' }}>With your name and social security number, imposters can open credit cards,take out a loan and even open new bank accounts. RYZE helps you to act immediately whenever anything suspicious occurs.</p>
             </div>
-            <div className='col-12 col-md-4'>
-              <img src={question} width='25%' height='25%' alt='Monitoring' />
+            <div className="col-12 col-md-4">
+              <img src={question} width="25%" height="25%" alt="Monitoring" />
 
               <h1
                 style={{
@@ -170,16 +149,13 @@ export default function Home() {
               >
                 Credit FAQs
               </h1>
-              <p style={{ padding: '0px 10px' }}>
-                Know what your score and reports mean with help from our credit
-                education center.
-              </p>
+              <p style={{ padding: '0px 10px' }}>Know what your score and reports mean with help from our credit education center.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className='section-three'>
+      <div className="section-three">
         <h1
           style={{
             textAlign: 'center',
@@ -193,31 +169,27 @@ export default function Home() {
           What can RYZE do for you?
         </h1>
         <div>
-          <div className='item-one'>
-            <div className='row'>
+          <div className="item-one">
+            <div className="row">
               <div
-                className='col-12 col-md-6'
+                className="col-12 col-md-6"
                 style={{
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
               >
-                <div
-                  id='item-one-graph'
-                  style={{ width: '40%', height: '50%s' }}
-                  data-aos='flip-up'
-                ></div>
+                <div id="item-one-graph" style={{ width: '40%', height: '50%s' }} data-aos="flip-up"></div>
               </div>
               <div
-                className='col-12 col-md-6'
+                className="col-12 col-md-6"
                 style={{
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
               >
-                <div className='design-card' data-aos='fade-left'>
+                <div className="design-card" data-aos="fade-left">
                   <h1
                     style={{
                       fontFamily: 'Roboto, san-serif',
@@ -230,57 +202,36 @@ export default function Home() {
                     Credit Monitoring
                   </h1>
                   <p>
-                    A credit monitoring service acts as both a personal
-                    assistant and watchdog when it comes to your credit.{' '}
-                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
-                      RYZE's
-                    </span>{' '}
-                    credit report monitoring service gives you frequent access
-                    to <span>THREE CREDIT BUREAUS's</span> credit history, so
-                    you can check your credit report as often as you like.{' '}
+                    A credit monitoring service acts as both a personal assistant and watchdog when it comes to your credit. <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>RYZE's</span> credit report monitoring service gives you frequent access to <span>THREE CREDIT BUREAUS's</span> credit
+                    history, so you can check your credit report as often as you like.{' '}
                   </p>
-                  <p style={{ marginBottom: '30px' }}>
-                    Monthly Membership for just $24.95 automatically billed to
-                    account
-                  </p>
+                  <p style={{ marginBottom: '30px' }}>Monthly Membership for just $24.95 automatically billed to account</p>
 
-                  <a
-                    href='https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D'
-                    className='cta'
-                  >
-                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                      Start Now
-                    </span>
-                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                      <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
-                      <polyline
-                        style={{ stroke: 'white' }}
-                        points='8 1 12 5 8 9'
-                      ></polyline>
+                  <a href="https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D" className="cta">
+                    <span style={{ fontSize: '0.9rem', color: 'white' }}>Start Now</span>
+                    <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5" style={{ stroke: 'white' }}></path>
+                      <polyline style={{ stroke: 'white' }} points="8 1 12 5 8 9"></polyline>
                     </svg>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className='item-two'>
-            <div className='row' style={{ marginTop: '50px' }}>
+          <div className="item-two">
+            <div className="row" style={{ marginTop: '50px' }}>
               <div
-                className='col-12 col-md-6'
+                className="col-12 col-md-6"
                 style={{
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
               >
-                <div
-                  id='item-two-graph'
-                  style={{ width: '50%', height: '60%' }}
-                  data-aos='flip-up'
-                ></div>
+                <div id="item-two-graph" style={{ width: '50%', height: '60%' }} data-aos="flip-up"></div>
               </div>
               <div
-                className='col-12 col-md-6'
+                className="col-12 col-md-6"
                 style={{
                   paddingTop: '30px',
                   display: 'flex',
@@ -288,7 +239,7 @@ export default function Home() {
                   alignItems: 'center',
                 }}
               >
-                <div className='design-card' data-aos='fade-left'>
+                <div className="design-card" data-aos="fade-left">
                   <h1
                     style={{
                       fontFamily: 'Roboto, san-serif',
@@ -301,57 +252,36 @@ export default function Home() {
                     Identity Protection
                   </h1>
                   <p>
-                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
-                      RYZE
-                    </span>{' '}
-                    won't prevent you from being targeted by identity thieves,
-                    but it can certainly help mitigate the damage. Getting
-                    alerts whenever changes occur on your credit report or to
-                    your score can be a great way to cut identity thieves off at
-                    the pass.
+                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>RYZE</span> won't prevent you from being targeted by identity thieves, but it can certainly help mitigate the damage. Getting alerts whenever changes occur on your credit report or to your score can be a great way to cut
+                    identity thieves off at the pass.
                   </p>
-                  <p style={{ marginBottom: '30px' }}>
-                    Monthly Membership for just $9.99 automatically billed to
-                    account
-                  </p>
+                  <p style={{ marginBottom: '30px' }}>Monthly Membership for just $9.99 automatically billed to account</p>
 
-                  <a
-                    href='https://myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471'
-                    className='cta'
-                  >
-                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                      Action Now
-                    </span>
-                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                      <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
-                      <polyline
-                        style={{ stroke: 'white' }}
-                        points='8 1 12 5 8 9'
-                      ></polyline>
+                  <a href="https://myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471" className="cta">
+                    <span style={{ fontSize: '0.9rem', color: 'white' }}>Action Now</span>
+                    <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
+                      <path style={{ stroke: 'white' }} d="M1,5 L11,5"></path>
+                      <polyline style={{ stroke: 'white' }} points="8 1 12 5 8 9"></polyline>
                     </svg>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className='item-three'>
-            <div className='row' style={{ marginTop: '50px' }}>
+          <div className="item-three">
+            <div className="row" style={{ marginTop: '50px' }}>
               <div
-                className='col-12 col-md-6'
+                className="col-12 col-md-6"
                 style={{
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
               >
-                <div
-                  id='item-three-graph'
-                  style={{ width: '50%', height: '60%s' }}
-                  data-aos='flip-up'
-                ></div>
+                <div id="item-three-graph" style={{ width: '50%', height: '60%s' }} data-aos="flip-up"></div>
               </div>
               <div
-                className='col-12 col-md-6'
+                className="col-12 col-md-6"
                 style={{
                   paddingTop: '30px',
                   display: 'flex',
@@ -359,7 +289,7 @@ export default function Home() {
                   alignItems: 'center',
                 }}
               >
-                <div className='design-card' data-aos='fade-left'>
+                <div className="design-card" data-aos="fade-left">
                   <h1
                     style={{
                       fontFamily: 'Roboto, san-serif',
@@ -371,21 +301,13 @@ export default function Home() {
                   >
                     Frequently Asked Questions
                   </h1>
-                  <p>
-                    Get the answers you need to commonly asked questions about
-                    managing your credit.
-                  </p>
-                  <Link to='questions'>
-                    <a href='#foo' className='cta'>
-                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                        Get Answers
-                      </span>
-                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                        <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
-                        <polyline
-                          points='8 1 12 5 8 9'
-                          style={{ stroke: 'white' }}
-                        ></polyline>
+                  <p>Get the answers you need to commonly asked questions about managing your credit.</p>
+                  <Link to="questions">
+                    <a href="#foo" className="cta">
+                      <span style={{ fontSize: '0.9rem', color: 'white' }}>Get Answers</span>
+                      <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5" style={{ stroke: 'white' }}></path>
+                        <polyline points="8 1 12 5 8 9" style={{ stroke: 'white' }}></polyline>
                       </svg>
                     </a>
                   </Link>
@@ -396,7 +318,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='testimonial-section-container'>
+      <div className="testimonial-section-container">
         <Testimonial />
       </div>
     </>

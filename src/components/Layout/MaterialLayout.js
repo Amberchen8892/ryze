@@ -10,11 +10,10 @@ export default function MaterialLayout(props) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      
+
       <div className={classes.root}>
         <Paper className={classes.paper}>{children}</Paper>
       </div>
-     
     </ThemeProvider>
   );
 }

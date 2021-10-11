@@ -8,8 +8,7 @@ const users = [
   {
     name: 'Tanya Sinclair',
     role: 'Recent Customer',
-    feedback:
-      '“I am impressed! For signing up with RYZE, I can acccess my credit score report anytime and get new update once a month. ”',
+    feedback: '“I am impressed! For signing up with RYZE, I can acccess my credit score report anytime and get new update once a month. ”',
     image: `${taya}`,
   },
   {
@@ -24,27 +23,27 @@ const users = [
 
 export default function Login() {
   return (
-    <Carousel variant='dark' style={{ width: '100vw' }}>
+    <Carousel variant="dark" style={{ width: '100vw' }}>
       {users.map((user) => (
         <Carousel.Item interval={2000} style={{ width: '100vw' }}>
-          <div className='testimonial-section-container'>
-            <div className='testimonial-section'>
-              <div className='slider-container'>
-                <div className='image'>
-                  <img src={user.image} alt='' />
+          <div className="testimonial-section-container">
+            <div className="testimonial-section">
+              <div className="slider-container">
+                <div className="image">
+                  <img src={user.image} alt="" />
                 </div>
                 {/* <div className='navigation'>
                   <img className='prev' src={iconPrev} alt='' />
                   <img className='next' src={iconNext} alt='' />
                 </div> */}
               </div>
-              <div className='feedback'>
-                <img src={patternQuotes} alt='' />
+              <div className="feedback">
+                <img src={patternQuotes} alt="" />
                 <p>{user.feedback} </p>
-                <h4 className='name'>{user.name}</h4>
-                <h4 className='role'>{user.role}</h4>
+                <h4 className="name">{user.name}</h4>
+                <h4 className="role">{user.role}</h4>
               </div>
-              <img className='curve' src={patternCurve} alt='' />
+              <img className="curve" src={patternCurve} alt="" />
             </div>
           </div>
         </Carousel.Item>

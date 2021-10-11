@@ -27,13 +27,7 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
-      role='tabpanel'
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
+    <div role="tabpanel" hidden={value !== index} id={`simple-tabpanel-${index}`} aria-labelledby={`simple-tab-${index}`} {...other}>
       {value === index && (
         <Box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
@@ -73,59 +67,30 @@ export default function BasicTabs() {
   };
   const moreLess = (index) => {
     if (activeIndex === index) {
-      return (
-        <ArrowCircleUpIcon
-          onClick={() => toggleClass(index)}
-          style={{ fill: '#1a1a2e' }}
-        />
-      );
+      return <ArrowCircleUpIcon onClick={() => toggleClass(index)} style={{ fill: '#1a1a2e' }} />;
     } else {
-      return (
-        <ArrowCircleDownIcon
-          onClick={() => toggleClass(index)}
-          style={{ fill: '#1a1a2e' }}
-        />
-      );
+      return <ArrowCircleDownIcon onClick={() => toggleClass(index)} style={{ fill: '#1a1a2e' }} />;
     }
   };
 
   return (
-    <div className='questions-container'>
-      <div className='questions-box container'>
+    <div className="questions-container">
+      <div className="questions-box container">
         <Box sx={{ width: '100%', minHeight: '100vh' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              aria-label='basic tabs example'
-              textColor={'secondary'}
-            >
-              <Tab
-                label={
-                  <span style={{ color: 'white', fontWeight: '500' }}>
-                    Membership FAQ
-                  </span>
-                }
-                {...a11yProps(0)}
-              />
-              <Tab
-                label={
-                  <span style={{ color: 'white', fontWeight: '500' }}>
-                    Credit Score FAQ
-                  </span>
-                }
-                {...a11yProps(1)}
-              />
+            <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" textColor={'secondary'}>
+              <Tab label={<span style={{ color: 'white', fontWeight: '500' }}>Membership FAQ</span>} {...a11yProps(0)} />
+              <Tab label={<span style={{ color: 'white', fontWeight: '500' }}>Credit Score FAQ</span>} {...a11yProps(1)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <ul className='list-group'>
+            <ul className="list-group">
               {ryzeQuestions.map((item, i) => (
-                <li className='list-group-item question-list'>
-                  <div className='question-icon-container'>
+                <li className="list-group-item question-list">
+                  <div className="question-icon-container">
                     <Grid container>
                       <Grid item xs={10}>
-                        <Typography variant='p' className={classes.custom}>
+                        <Typography variant="p" className={classes.custom}>
                           {item.question}
                         </Typography>
                       </Grid>
@@ -149,13 +114,13 @@ export default function BasicTabs() {
             </ul>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <ul className='list-group'>
+            <ul className="list-group">
               {creditScoreQuestions.map((item, i) => (
-                <li className='list-group-item question-list'>
-                  <div className='question-icon-container'>
+                <li className="list-group-item question-list">
+                  <div className="question-icon-container">
                     <Grid container>
                       <Grid item xs={10}>
-                        <Typography variant='p' className={classes.custom}>
+                        <Typography variant="p" className={classes.custom}>
                           {item.question}
                         </Typography>
                       </Grid>
