@@ -41,26 +41,24 @@ export default function NavBar() {
 
                 <ul className='navbar-nav '>
                   <li className='nav-item'>
-                    <Link to='/signup'>
-                      <button
-                        type='button'
-                        className='btn btn-outline-light'
-                        style={{ width: '150px' }}
-                      >
-                        Sign Up{' '}
-                      </button>
-                    </Link>
+                    <a
+                      role='button'
+                      href='https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D'
+                      className='btn btn-outline-light sign-up-button'
+                      style={{ width: '150px' }}
+                    >
+                      <span>Sign Up</span>{' '}
+                    </a>
                   </li>
                   <li className='nav-item' style={{ marginLeft: '10px' }}>
-                    <Link to='/login'>
-                      <button
-                        type='button'
-                        className='btn btn-light btn-two'
-                        style={{ width: '150px' }}
-                      >
-                        Member Login
-                      </button>
-                    </Link>
+                    <a
+                      type='button'
+                      href='https://www.myryze.com/customer_login.asp'
+                      className='btn btn-light btn-two'
+                      style={{ width: '150px' }}
+                    >
+                      Member Login
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -104,28 +102,28 @@ export default function NavBar() {
                       Take Action
                     </span>
                   </a> */}
-                  <Link to='/signup'>
-                    <button
-                      type='button'
-                      className='btn btn-outline-light'
-                      style={{ fontSize: '0.6rem', width: '7rem' }}
-                    >
-                      Sign Up{' '}
-                    </button>
-                  </Link>
-                  <Link to='/login'>
-                    <button
-                      type='button'
-                      className='btn btn-light btn-two'
-                      style={{
-                        width: '7rem',
-                        marginLeft: '0.3rem',
-                        fontSize: '0.6rem',
-                      }}
-                    >
-                      Member Login
-                    </button>
-                  </Link>
+
+                  <a
+                    role='button'
+                    href='https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D'
+                    className='btn btn-outline-light'
+                    style={{ fontSize: '0.6rem', width: '7rem' }}
+                  >
+                    Sign Up{' '}
+                  </a>
+
+                  <a
+                    role='button'
+                    href='https://www.myryze.com/customer_login.asp'
+                    className='btn btn-light btn-two'
+                    style={{
+                      width: '7rem',
+                      marginLeft: '0.3rem',
+                      fontSize: '0.6rem',
+                    }}
+                  >
+                    Member Login
+                  </a>
                 </div>
               </div>
             </div>

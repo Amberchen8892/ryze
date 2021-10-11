@@ -3,7 +3,6 @@ import { Row, Container, Col } from 'react-bootstrap';
 import trans from '../images/transunion.png';
 import equifax from '../images/equifax-logo.png';
 import exp from '../images/ExperianSmall.png';
-import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -68,17 +67,16 @@ export default function Footer() {
               >
                 Start at $24.95/month
               </p>
-              <Link to='/signup'>
-                <a
-                  href='#foo'
-                  className='btn btn-info footer-one-btn'
-                  role='button'
-                >
-                  <span style={{ color: 'white', fontWeight: 'bold' }}>
-                    Enroll Now
-                  </span>
-                </a>
-              </Link>
+
+              <a
+                href='https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D'
+                className='btn btn-info footer-one-btn'
+                role='button'
+              >
+                <span style={{ color: 'white', fontWeight: 'bold' }}>
+                  Enroll Now
+                </span>
+              </a>
             </Col>
             <Col
               xs={12}
@@ -115,17 +113,16 @@ export default function Footer() {
               >
                 start at $9.99/month
               </p>
-              <Link to='/signup'>
-                <a
-                  href='#foo'
-                  className='btn btn-info footer-one-btn'
-                  role='button'
-                >
-                  <span style={{ color: 'white', fontWeight: 'bold' }}>
-                    Take Action
-                  </span>
-                </a>
-              </Link>
+
+              <a
+                href='https://myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471'
+                className='btn btn-info footer-one-btn'
+                role='button'
+              >
+                <span style={{ color: 'white', fontWeight: 'bold' }}>
+                  Take Action
+                </span>
+              </a>
             </Col>
           </Row>
         </Container>

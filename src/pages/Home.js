@@ -92,20 +92,22 @@ export default function Home() {
                     applications. Having a good grasp on your credit can help
                     you get ahead in life and save you time and money.
                   </p>
-                  <Link to='/signup'>
-                    <a href='#foo' className='cta'>
-                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                        Sign Up Now
-                      </span>
-                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                        <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
-                        <polyline
-                          style={{ stroke: 'white' }}
-                          points='8 1 12 5 8 9'
-                        ></polyline>
-                      </svg>
-                    </a>
-                  </Link>
+
+                  <a
+                    href='https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D'
+                    className='cta'
+                  >
+                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                      Sign Up Now
+                    </span>
+                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
+                      <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
+                      <polyline
+                        style={{ stroke: 'white' }}
+                        points='8 1 12 5 8 9'
+                      ></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -241,20 +243,22 @@ export default function Home() {
                     Monthly Membership for just $24.95 automatically billed to
                     account
                   </p>
-                  <Link to='/signup'>
-                    <a href='#foo' className='cta'>
-                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                        Start Now
-                      </span>
-                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                        <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
-                        <polyline
-                          style={{ stroke: 'white' }}
-                          points='8 1 12 5 8 9'
-                        ></polyline>
-                      </svg>
-                    </a>
-                  </Link>
+
+                  <a
+                    href='https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D'
+                    className='cta'
+                  >
+                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                      Start Now
+                    </span>
+                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
+                      <path d='M1,5 L11,5' style={{ stroke: 'white' }}></path>
+                      <polyline
+                        style={{ stroke: 'white' }}
+                        points='8 1 12 5 8 9'
+                      ></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -310,20 +314,22 @@ export default function Home() {
                     Monthly Membership for just $9.99 automatically billed to
                     account
                   </p>
-                  <Link to='/signup'>
-                    <a href='#foo' className='cta'>
-                      <span style={{ fontSize: '0.9rem', color: 'white' }}>
-                        Action Now
-                      </span>
-                      <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
-                        <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
-                        <polyline
-                          style={{ stroke: 'white' }}
-                          points='8 1 12 5 8 9'
-                        ></polyline>
-                      </svg>
-                    </a>
-                  </Link>
+
+                  <a
+                    href='https://myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471'
+                    className='cta'
+                  >
+                    <span style={{ fontSize: '0.9rem', color: 'white' }}>
+                      Action Now
+                    </span>
+                    <svg width='1rem' height='1.2rem' viewBox='0 0 13 10'>
+                      <path style={{ stroke: 'white' }} d='M1,5 L11,5'></path>
+                      <polyline
+                        style={{ stroke: 'white' }}
+                        points='8 1 12 5 8 9'
+                      ></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>

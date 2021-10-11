@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import john from '../images/testimonial-images/john.svg';
 import taya from '../images/testimonial-images/tanya.svg';
-import iconPrev from '../images/testimonial-images/icon-prev.svg';
-import iconNext from '../images/testimonial-images/icon-next.svg';
 import patternQuotes from '../images/testimonial-images/pattern-quotes.svg';
 import patternCurve from '../images/testimonial-images/pattern-curve.svg';
 const users = [
@@ -24,54 +23,32 @@ const users = [
 ];
 
 export default function Login() {
-  useEffect(() => {
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    const image = document.querySelector('.image');
-    const feedback = document.querySelector('.feedback');
-    let slide = 0;
-
-    const navigation = () => {
-      // Check slide value
-      if (slide > users.length - 1) {
-        slide = 0;
-      }
-      image.innerHTML = `
-    <img src=${users[slide].image} alt="">
-    `;
-      feedback.innerHTML = `
-    <img src=${patternQuotes} alt="">
-    <p>${users[slide].feedback}</p>
-    <h4 class="name">${users[slide].name} <span class="role">${users[slide].role}</span></h4>
-    `;
-      slide++;
-    };
-    navigation();
-    prevBtn.addEventListener('click', navigation);
-    nextBtn.addEventListener('click', navigation);
-  }, []);
-
   return (
-    <div className='testimonial-section-container'>
-      <div className='testimonial-section'>
-        <div className='slider-container'>
-          <div className='image'>{/* <img src={john} alt='' /> */}</div>
-          <div className='navigation'>
-            <img className='prev' src={iconPrev} alt='' />
-            <img className='next' src={iconNext} alt='' />
+    <Carousel variant='dark' style={{ width: '100vw' }}>
+      {users.map((user) => (
+        <Carousel.Item interval={2000} style={{ width: '100vw' }}>
+          <div className='testimonial-section-container'>
+            <div className='testimonial-section'>
+              <div className='slider-container'>
+                <div className='image'>
+                  <img src={user.image} alt='' />
+                </div>
+                {/* <div className='navigation'>
+                  <img className='prev' src={iconPrev} alt='' />
+                  <img className='next' src={iconNext} alt='' />
+                </div> */}
+              </div>
+              <div className='feedback'>
+                <img src={patternQuotes} alt='' />
+                <p>{user.feedback} </p>
+                <h4 className='name'>{user.name}</h4>
+                <h4 className='role'>{user.role}</h4>
+              </div>
+              <img className='curve' src={patternCurve} alt='' />
+            </div>
           </div>
-        </div>
-        <div className='feedback'>
-          <img src={patternQuotes} alt='' />
-          {/* <p>
-            “ I am impressed! For signing up with RYZE, I can acccess my credit
-            score report anytime and get new update once a month. ”{' '}
-          </p>
-          <h4 className='name'>Tanya Sinclair</h4>
-          <h4 className='role'>Recent customer</h4> */}
-        </div>
-        <img className='curve' src={patternCurve} alt='' />
-      </div>
-    </div>
+        </Carousel.Item>
+      ))}
+    </Carousel>
   );
 }

@@ -6,6 +6,7 @@
   --secondary-color: #21e6c1;
   --darkBlue: hsl(240, 38%, 20%);
   --grayishBlue: hsl(240, 18%, 77%);
+  --wype-green: #12ae6d;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Playfair+Display:ital,wght@0,700;1,500&family=Roboto:ital,wght@0,400;1,500&display=swap');
 * {
@@ -60,6 +61,17 @@
   position: fixed;
   width: 100%;
   top: 0;
+}
+.nav-item:hover {
+  color: black;
+}
+.sign-up-button {
+  background-color: transparent;
+  color: #ffffff !important;
+}
+.sign-up-button:hover {
+  background-color: white;
+  color: #1a1a2e !important;
 }
 .navbar-container-scroll {
   background-color: #1a1a2e65;
@@ -489,5 +501,26 @@ a {
   .navigation {
     left: 40%;
   }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: #892cdc;
+  background-size: 50%, 50%;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 2rem;
+  color: #892cdc;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 2rem;
+  color: #892cdc;
 }
 /* ------testimonial section ends   ------ */
