@@ -32,10 +32,6 @@ export default function Login() {
                 <div className="image">
                   <img src={user.image} alt="" />
                 </div>
-                {/* <div className='navigation'>
-                  <img className='prev' src={iconPrev} alt='' />
-                  <img className='next' src={iconNext} alt='' />
-                </div> */}
               </div>
               <div className="feedback">
                 <img src={patternQuotes} alt="" />
