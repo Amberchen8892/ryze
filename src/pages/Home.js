@@ -89,7 +89,7 @@ export default function Home() {
                     In today's world, a lot of things depend on your credit-loan approvals, insurance premiums, even the success of job applications. Having a good grasp on your credit can help you get ahead in life and save you time and money.
                   </p>
 
-                  <a href="https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D" className="cta">
+                  <a href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="cta">
                     <span style={{ fontSize: '0.9rem', color: 'white' }}>Sign Up Now</span>
                     <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
                       <path style={{ stroke: 'white' }} d="M1,5 L11,5"></path>
@@ -207,7 +207,7 @@ export default function Home() {
                   </p>
                   <p style={{ marginBottom: '30px' }}>Monthly Membership for just $24.95 automatically billed to account</p>
 
-                  <a href="https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D" className="cta">
+                  <a href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="cta">
                     <span style={{ fontSize: '0.9rem', color: 'white' }}>Start Now</span>
                     <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
                       <path d="M1,5 L11,5" style={{ stroke: 'white' }}></path>

@@ -33,7 +33,7 @@ export default function NavBar() {
 
                 <ul className="navbar-nav ">
                   <li className="nav-item">
-                    <a role="button" href="https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D" className="btn btn-outline-light sign-up-button" style={{ width: '150px' }}>
+                    <a role="button" href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-outline-light sign-up-button" style={{ width: '150px' }}>
                       <span>Sign Up</span>{' '}
                     </a>
                   </li>
@@ -85,7 +85,7 @@ export default function NavBar() {
                     </span>
                   </a> */}
 
-                  <a role="button" href="https://www.myryze.com/signup413ar.asp?tGUID=170B5381-27ED-46B2-A372-327E68D3E69D" className="btn btn-outline-light" style={{ fontSize: '0.6rem', width: '7rem' }}>
+                  <a role="button" href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-outline-light" style={{ fontSize: '0.6rem', width: '7rem' }}>
                     Sign Up{' '}
                   </a>
 
