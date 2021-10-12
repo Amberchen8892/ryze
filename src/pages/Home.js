@@ -89,7 +89,7 @@ export default function Home() {
                     In today's world, a lot of things depend on your credit-loan approvals, insurance premiums, even the success of job applications. Having a good grasp on your credit can help you get ahead in life and save you time and money.
                   </p>
 
-                  <a href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="cta">
+                  <a href="http://app.myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="cta">
                     <span style={{ fontSize: '0.9rem', color: 'white' }}>Sign Up Now</span>
                     <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
                       <path style={{ stroke: 'white' }} d="M1,5 L11,5"></path>
@@ -207,7 +207,7 @@ export default function Home() {
                   </p>
                   <p style={{ marginBottom: '30px' }}>Monthly Membership for just $24.95 automatically billed to account</p>
 
-                  <a href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="cta">
+                  <a href="http://app.myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="cta">
                     <span style={{ fontSize: '0.9rem', color: 'white' }}>Start Now</span>
                     <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
                       <path d="M1,5 L11,5" style={{ stroke: 'white' }}></path>
@@ -257,7 +257,7 @@ export default function Home() {
                   </p>
                   <p style={{ marginBottom: '30px' }}>Monthly Membership for just $9.99 automatically billed to account</p>
 
-                  <a href="https://myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471" className="cta">
+                  <a href="https://app.myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471" className="cta">
                     <span style={{ fontSize: '0.9rem', color: 'white' }}>Action Now</span>
                     <svg width="1rem" height="1.2rem" viewBox="0 0 13 10">
                       <path style={{ stroke: 'white' }} d="M1,5 L11,5"></path>

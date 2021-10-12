@@ -33,12 +33,12 @@ export default function NavBar() {
 
                 <ul className="navbar-nav ">
                   <li className="nav-item">
-                    <a role="button" href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-outline-light sign-up-button" style={{ width: '150px' }}>
+                    <a role="button" href="http://app.myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-outline-light sign-up-button" style={{ width: '150px' }}>
                       <span>Sign Up</span>{' '}
                     </a>
                   </li>
                   <li className="nav-item" style={{ marginLeft: '10px' }}>
-                    <a type="button" href="https://www.myryze.com/customer_login.asp" className="btn btn-light btn-two" style={{ width: '150px' }}>
+                    <a type="button" href="https://app.www.myryze.com/customer_login.asp" className="btn btn-light btn-two" style={{ width: '150px' }}>
                       Member Login
                     </a>
                   </li>
@@ -75,23 +75,13 @@ export default function NavBar() {
                 }}
               >
                 <div style={{ display: 'flex', flex: 'wrap' }}>
-                  {/* <a
-                    href='/signup'
-                    className='btn btn-info footer-one-btn'
-                    role='button'
-                  >
-                    <span style={{ color: 'white', fontWeight: 'bold' }}>
-                      Take Action
-                    </span>
-                  </a> */}
-
-                  <a role="button" href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-outline-light" style={{ fontSize: '0.6rem', width: '7rem' }}>
+                  <a role="button" href="http://app.myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-outline-light" style={{ fontSize: '0.6rem', width: '7rem' }}>
                     Sign Up{' '}
                   </a>
 
                   <a
                     role="button"
-                    href="https://www.myryze.com/customer_login.asp"
+                    href="https://www.app.myryze.com/customer_login.asp"
                     className="btn btn-light btn-two"
                     style={{
                       width: '7rem',

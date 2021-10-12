@@ -63,7 +63,7 @@ export default function Footer() {
                 Start at $24.95/month
               </p>
 
-              <a href="http://myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-info footer-one-btn" role="button">
+              <a href="http://app.myryze.com/redirect.asp?GUID=BTW1135HKQ8Y" className="btn btn-info footer-one-btn" role="button">
                 <span style={{ color: 'white', fontWeight: 'bold' }}>Enroll Now</span>
               </a>
             </Col>
@@ -98,7 +98,7 @@ export default function Footer() {
                 start at $9.99/month
               </p>
 
-              <a href="https://myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471" className="btn btn-info footer-one-btn" role="button">
+              <a href="https://app.myryze.com/signup_arIDP12.asp?GUID=R1XNY2DDYAS2&tGUID=7EFD5C54-6581-4665-B0F5-1D7D3FEE6471" className="btn btn-info footer-one-btn" role="button">
                 <span style={{ color: 'white', fontWeight: 'bold' }}>Take Action</span>
               </a>
             </Col>
